@@ -1,0 +1,14 @@
+agent:
+  demo:
+    catalog: data/product_catalog.json
+
+salesmind:
+  base_url: http://localhost:4000
+  session_id: ""
+
+judge:
+  enabled: false
+  provider: openai_compatible
+  base_url: https://api.deepseek.com/v1
+  model: deepseek-chat
+  api_key_env: DEEPSEEK_API_KEY

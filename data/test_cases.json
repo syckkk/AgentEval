@@ -1,0 +1,109 @@
+{
+  "test_cases": [
+    {
+      "id": "TC001",
+      "input": "你好",
+      "expected_tools": [],
+      "expected_answer": "你好",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC002",
+      "input": "你能帮我做什么？",
+      "expected_tools": [],
+      "expected_answer": "可以帮你",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC003",
+      "input": "OpenFit 2多少钱？",
+      "expected_tools": ["search_product"],
+      "expected_answer": "OpenFit 2售价为1299元",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC004",
+      "input": "OpenFit Air 的价格是多少？",
+      "expected_tools": ["search_product"],
+      "expected_answer": "OpenFit Air售价为899元",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC005",
+      "input": "OpenFit Pro 售价多少？",
+      "expected_tools": ["search_product"],
+      "expected_answer": "OpenFit Pro售价为1899元",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC006",
+      "input": "ComfoBuds Mini 多少钱？",
+      "expected_tools": ["search_product"],
+      "expected_answer": "ComfoBuds Mini售价为299元",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC007",
+      "input": "OpenFit 2有库存吗？",
+      "expected_tools": ["search_product", "check_inventory"],
+      "expected_answer": "OpenFit 2当前有货",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC008",
+      "input": "OpenFit Pro 库存怎么样？",
+      "expected_tools": ["search_product", "check_inventory"],
+      "expected_answer": "OpenFit Pro当前缺货",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC009",
+      "input": "买3个OpenFit 2多少钱？",
+      "expected_tools": ["search_product", "calculate_price"],
+      "expected_answer": "总价为3897元",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC010",
+      "input": "5个ComfoBuds Mini总价多少？",
+      "expected_tools": ["search_product", "calculate_price"],
+      "expected_answer": "总价为1495元",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC011",
+      "input": "今天上海天气怎么样？",
+      "expected_tools": [],
+      "expected_answer": "无法回答",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC012",
+      "input": "耳机多少钱？",
+      "expected_tools": [],
+      "expected_answer": "哪款耳机",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC013",
+      "input": "OpenFit 3多少钱？",
+      "expected_tools": ["search_product"],
+      "expected_answer": "未找到产品",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC014",
+      "input": "2个OpenFit Air总价多少？",
+      "expected_tools": ["search_product", "calculate_price"],
+      "expected_answer": "总价为1798元",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    },
+    {
+      "id": "TC015",
+      "input": "你们卖什么耳机？",
+      "expected_tools": [],
+      "expected_answer": "OpenFit 2",
+      "evaluation_criteria": {"task_success": true, "answer_quality": true}
+    }
+  ]
+}

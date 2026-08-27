@@ -1,0 +1,8 @@
+{
+  "products": [
+    {"name": "OpenFit 2", "price": 1299, "stock": 50},
+    {"name": "OpenFit Air", "price": 899, "stock": 120},
+    {"name": "OpenFit Pro", "price": 1899, "stock": 0},
+    {"name": "ComfoBuds Mini", "price": 299, "stock": 200}
+  ]
+}
